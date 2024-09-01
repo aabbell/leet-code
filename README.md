@@ -66,30 +66,19 @@ Given two strings s and t, return true if they are equal when both are typed int
 
 Note that after backspacing an empty text, the text will continue empty.
 
- 
+BASEBALL GAME
 
-Example 1:
+You are keeping the scores for a baseball game with strange rules. At the beginning of the game, you start with an empty record.
 
-Input: s = "ab#c", t = "ad#c"
-Output: true
-Explanation: Both s and t become "ac".
+You are given a list of strings operations, where operations[i] is the ith operation you must apply to the record and is one of the following:
 
-Example 2:
+    An integer x.
+        Record a new score of x.
+    '+'.
+        Record a new score that is the sum of the previous two scores.
+    'D'.
+        Record a new score that is the double of the previous score.
+    'C'.
+        Invalidate the previous score, removing it from the record.
 
-Input: s = "ab##", t = "c#d#"
-Output: true
-Explanation: Both s and t become "".
 
-REMOVE ALL ADJECENT DUPLICATES IN STRING
-
-
-You are given a string s consisting of lowercase English letters. A duplicate removal consists of choosing two adjacent and equal letters and removing them.
-
-We repeatedly make duplicate removals on s until we no longer can.
-
-Return the final string after all such duplicate removals have been made. It can be proven that the answer is unique.
-
-Input: s = "abbaca"
-Output: "ca"
-Explanation: 
-For example, in "abbaca" we could remove "bb" since the letters are adjacent and equal, and this is the only possible move.  The result of this move is that the string is "aaca", of which only "aa" is possible, so the final string is "ca".
