@@ -82,3 +82,26 @@ You are given a list of strings operations, where operations[i] is the ith opera
         Invalidate the previous score, removing it from the record.
 
 
+MERGE STRINGS ALTERNATELY
+
+
+You are given two strings word1 and word2. Merge the strings by adding letters in alternating order, starting with word1. If a string is longer than the other, append the additional letters onto the end of the merged string.
+
+Return the merged string.
+
+
+MERGE SORTED ARRAY
+
+You are given two integer arrays nums1 and nums2, sorted in non-decreasing order, and two integers m and n, representing the number of elements in nums1 and nums2 respectively.
+
+Merge nums1 and nums2 into a single array sorted in non-decreasing order.
+
+The final sorted array should not be returned by the function, but instead be stored inside the array nums1. To accommodate this, nums1 has a length of m + n, where the first m elements denote the elements that should be merged, and the last n elements are set to 0 and should be ignored. nums2 has a length of n.
+
+
+HOW MANY NUMBERS ARE SMALLER THAN THE CURRENT NUMBER
+
+Given the array nums, for each nums[i] find out how many numbers in the array are smaller than it. That is, for each nums[i] you have to count the number of valid j's such that j != i and nums[j] < nums[i].
+
+Return the answer in an array.
+
