@@ -1,23 +1,25 @@
-def removeItem(s):
-    idx = 0
-    for i in range (0,len(s)):
-        if s[i] != '#':
-            s = s[:idx] + s[i] + s[idx+1:]
-            idx += 1
-        elif s[i] == '#' and idx >= 0:
-            idx -= 1
+def next(str, index):
+    backspace = 0
+    while index >= 0:
+        if backspace == 0 and str[index] != '#':
+            break
+        elif str[index] == "#":
+            backspace += 1 
+        else:
+            backspace -= 1 
+        index -= 1 
+    return index
 
-        if idx < 0:
-            idx = 0
+index_s , index_t = len(s) - 1 , len(t) - 1
 
-    ans = ''
-    for i in range (0, idx):
-        ans += s[i]
-    return ans
-s = "a#c"
-t = "b"
-if (removeItem(s) == removeItem(t)):
-    print("true")
-else:
-    print("false")
-    
+while index_s >= 0 or index_t >= 0:
+    index_s = next(s, index_s)
+    index_t = next(t, index_t)
+
+    char_s = s[index_s] if index_s >= 0 else ""
+    char_t = t[index_t] if index_t >= 0 else ""
+    if char_s != char_t:
+        return False
+    index_s -= 1
+    index_t -= 1
+return True
