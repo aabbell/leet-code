@@ -105,3 +105,19 @@ Given the array nums, for each nums[i] find out how many numbers in the array ar
 
 Return the answer in an array.
 
+FIRST LETTER TO APPEAR TWICE
+
+
+Given a string s consisting of lowercase English letters, return the first letter to appear twice.
+
+Note:
+
+    A letter a appears twice before another letter b if the second occurrence of a is before the second occurrence of b.
+    s will contain at least one letter that appears twice.
+
+
+RUNNING SUM OF 1D ARRAY
+
+Given an array nums. We define a running sum of an array as runningSum[i] = sum(nums[0]…nums[i]).
+
+Return the running sum of nums.
